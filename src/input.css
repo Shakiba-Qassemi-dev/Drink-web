@@ -1,0 +1,306 @@
+@import "tailwindcss";
+
+body{
+    height: 4000px;
+    font-family: myfont ;
+}
+.nav{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.352);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@font-face {
+    font-family: myfont;
+    src: url('./font/StudioPro-Bold.woff2');
+}
+
+#sec2{
+    width: 100%;
+    height: 300vh;
+    position: absolute;
+    left: 0;
+    top: 100vh;
+    background-color: white;
+    z-index: 999;
+    overflow: hidden;
+}
+.sec3{
+  width: 100%;
+  height: 120vh;
+  position: absolute;
+  top: 270vh;
+  left: 0;
+  z-index: 1000;
+}
+#sec4{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 400vh;
+  left: 0;
+  z-index: 1010;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fullscreen {
+  width: 100vw !important;
+  height: 100vh !important;
+  transform: scale(1) !important;
+}
+
+  .scroll-wrapper {
+    position: sticky; 
+    top: 40%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 20px; /* فاصله بین عکس‌ها */
+    overflow-x: hidden;
+    
+  }
+  
+  .scroll-img {
+    transform: translateX(1000px); /* کاملاً خارج صفحه سمت راست */
+    opacity: 0;
+    transition: transform 0.1s linear, opacity 0.1s linear;
+  }
+  .hov div{
+    transition: 1s;
+  }
+  .hov div:hover{
+    background-image: url('./images/Watermelon-Illustration-2.png');
+    background-size: 250px;
+    background-repeat: no-repeat;
+    background-position: left;
+    
+  }
+  .hov1 div{
+    transition: 1s;
+  }
+  .hov1 div:hover{
+    background-image: url('./images/Tile-Passion-Illustration.png');
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: left;
+    
+  }
+  .hov2 div{
+    transition: 1s;
+  }
+  .hov2 div:hover{
+    background-image: url('./images/Tile-Menthe_lime-Illustration.png');
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: left;
+    
+  }
+  i{
+    transition: 1s;
+  }
+  
+
+  .titr {
+    width: 200%;
+    /* height: 110px; */
+    position: absolute;
+    left: 0;
+    top: 100px;
+    display: flex;
+    overflow: hidden;
+    margin-top: 70px;
+    align-items: center;
+    animation: anime2 linear infinite 10s alternate;
+
+    >span {
+        display: flex;
+        width: 120%;
+        height: 100%;
+        font-size: 70px;
+        align-items: center;
+        font-weight: 600;
+
+        &:nth-of-type(2),
+        &:nth-of-type(4) {
+            color: grey;
+        }
+    }
+}
+#sec5{
+  width: 100%;
+  background-color: white; 
+  height: 100%;
+  position: absolute;
+  z-index: 1200;
+  left: 0;
+  top: 500vh;
+ 
+}
+@keyframes anime1 {
+    to {
+        opacity: 1;
+        z-index: -1;
+    }
+}
+
+@keyframes anime2 {
+    to {
+        transform: translateX(-1100px);
+    }
+} 
+.footitem{
+  width: 150px;
+  height: 150px;    
+  position: fixed;
+  right: 0;
+  z-index: 1500;
+  bottom: 0;
+  margin: 30px;
+  &:hover{
+      >img, &::before{
+          animation-play-state: paused;
+      }
+      >a{
+          left: -30%;
+      }
+     
+  }
+  
+  >a{
+      color: rgb(99, 17, 17);
+      text-decoration: none;
+      position: absolute;
+      left: 50%;
+      font-size: 10px;
+      transition: 1.5s;
+      &:nth-of-type(1){
+          top: 20%;
+      }
+      &:nth-of-type(2){
+          top: 40%;
+          
+      }
+      &:nth-of-type(3){
+          top: 60%;
+      }
+      &:nth-of-type(4){
+          top: 80%;
+      }
+
+
+  }
+
+  >img, &::before{
+      display: flex;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+     
+  }
+  &::before{
+      content: '';
+      background-color: rgb(99, 17, 17);
+      animation: back1  ease-out infinite alternate 5s;
+  }
+  >img{
+      animation: back2  ease-out infinite alternate 5s;
+  }
+  
+}
+@keyframes back1{
+  0%{border-radius: 56% 44% 47% 53% / 20% 24% 76% 80%   }
+  50%{border-radius: 56% 44% 68% 32% / 58% 72% 28% 42%  }
+  100%{border-radius:81% 19% 23% 77% / 33% 69% 31% 67%  ;}
+}
+@keyframes back2{
+  0%{border-radius: 81% 19% 23% 77% / 33% 69% 31% 67%  ;}
+  50%{border-radius: 56% 44% 47% 53% / 20% 24% 76% 80%  }
+  100%{border-radius: 56% 44% 68% 32% / 58% 72% 28% 42%  }        
+}
+/* /////////////////////////////////موبایل///////////////// */
+
+@media (max-width: 768px) {
+
+    
+    #slider {
+        margin-bottom: 50px !important;
+    }
+    #sec2 {
+      /* height: 100vh; */
+        margin-top: 100px !important;
+        margin-bottom: 20px !important;
+    }
+    .sec3 {
+      padding: 50px;
+      
+        
+    }
+    .slider-item {
+        display: none !important;
+    }
+    .slider-item:first-child {
+        display: flex !important;
+    }
+    .scroll-wrapper {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        overflow: hidden !important;
+        width: 100% !important;
+        padding: 0 !important;
+        margin: 0 auto !important;
+    }
+
+   @media (max-width: 768px) {
+    .titr {
+        animation: none !important; 
+        width: 95% !important;
+        height: auto;
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
+        position: relative;
+        top: auto !important;
+        margin-top: -200px !important; 
+         background-color: rgb(0, 140, 255);
+         border: none;
+         border-radius: 40px;
+         padding: 10px;
+         margin: 10px;
+         background-color: #b9f8cf;
+    }
+
+    .titr > span {
+
+        width: auto !important; 
+        text-align: center; 
+        font-size: 46px !important; 
+       font-family: "Luckiest Guy", cursive;
+        color: rgb(173, 72, 36) !important;
+       
+    }
+}
+
+    .scroll-img {
+        transform: none !important;
+        opacity: 1 !important;
+    }
+}
+
+
+
+
+
+
+
+    
+

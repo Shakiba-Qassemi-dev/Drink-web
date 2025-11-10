@@ -1,2 +1,15 @@
 # Drink-web
 Drink-web
+![Image]()
+- [Demo Project]()
+
+-👩‍💻 Developed by shakiba qassemi
+
+-📆Created - October 2025
+
+-🔧Technologies Used - Html , Css ,Tailwind, Nextjs 
+
+-✅Role - Frontend
+
+-📬How to reach me : with my [instagram](https://www.instagram.com/shakiba.qassemi.dev/)
+

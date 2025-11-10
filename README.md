@@ -1,6 +1,6 @@
 # Drink-web
 Drink-web
-![Image](https://github.com/user-attachments/assets/d1c98aca-170a-4176-96cc-fb3674c029f7))
+![Image](https://github.com/user-attachments/assets/1e7cd22e-c171-4b07-865e-793d2a448095)
 - [Demo Project](https://shakiba-qassemi-dev.github.io/Drink-web/)
 
 -👩‍💻 Developed by shakiba qassemi
